@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+	<title>Zahlengenerator (Quadrierer)</title>
+		
+	<script>
+		"use strict";
+		
+			function fQuadrierer() {
+			
+			let Zahl = document.getElementById("idAnzahl").value;
+			let i = 1; 
+			let Ausgabe=" ";
+			let Quadrat;
+			
+			while (i <= Zahl) {
+			Quadrat = i * i;
+			Ausgabe = Ausgabe + "<br>" + "Die Zahl: " + i + " zum quadrat ist: " + Quadrat;
+			i = i + 1 ;
+			
+			}
+				
+			document.getElementById("idAusgabe").innerHTML = Ausgabe;
+
+			}
+		
+
+
+		</script>
+	</head>
+<body>
+
+	<h1>Zahlengenerator (Quadrierer)</h1>
+		Gib eine Zahl an: <input id="idAnzahl" type="text" value="10"> <button onClick="fQuadrierer();">Berechne!</button>
+		<div id="idAusgabe"></div>
+
+<br>
+
+
+	</body>
+</html>
